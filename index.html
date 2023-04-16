@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> About AS </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bg {
+
+        background-image: url('./image/hero_bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 500px;
+    }
+
+    .bgcolor {
+        background-color: #00000085;
+        height: 500px;
+    }
+
+    .main_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .sub_container ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .main_container .link a {
+        text-decoration: none;
+        border: 2px solid;
+        padding: 12px;
+        display: inline-block;
+        color: white;
+    }
+
+    .second_main_container {
+        display: flex;
+        margin: 0 auto;
+        /* justify-content: center; */
+        gap: 40px;
+        margin-left: 363px;
+        text-align: center;
+    }
+
+    .second_main_container .icon {
+        font-size: 50px;
+        color: #e74a0b;
+
+    }
+
+    .second_main_container h1 {
+        padding: 30px 0px 0px;
+        font-size: 40px;
+        margin: 0px 0px 0px 28px;
+    }
+
+    .second_main_container p {
+        font-size: 22px;
+        margin: 10px 0px 0px;
+        padding: 10px;
+    }
+
+    .third_main_container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        width: 80%;
+        padding: 30px;
+    }
+
+    .third_main_container .link a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        /* border: 3px solid; */
+        text-align: center;
+        background-color: #e74a0b;
+        color: white;
+    }
+
+    .third_main_container .icon {
+        margin: 10px;
+    }
+
+    .sub_container ul li:hover {
+        color: red;
+        background-color: yellow;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: underline;
+    }
+
+    .sub_container .select_option {
+        background-color: transparent;
+        color: white;
+    }
+
+    li {
+        display: block;
+        transition-duration: 0.5s;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        < !-- left: 0;
+        -->display: none;
+    }
+
+    ul li:hover>ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+</style>
+
+<body>
+
+    <section class="bg">
+        <div class="bgcolor">
+            <div class="main_container">
+
+                <div>
+                    <h1> Dewi <h1>
+                </div>
+
+                <div class="sub_container">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT AS</li>
+                        <li>SERVICES</li>
+                        <li>PORTFOLIO</li>
+                        <li>TEAM</li>
+                        <li> DROP DOWN
+                            <ul>
+                                <li> Jeeva</li>
+                                <li> Shalini</li>
+                                <li> Jaya</li>
+                                <li> Shanumgam</li>
+                            </ul>
+
+                        </li>
+
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <a href="#">GET STARTED</a>
+                </div>
+            </div>
+
+            <!-- first lin section end -->
+            <!-- second play div start -->
+
+            <section class="second_main_container">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-circle-play"></i>
+                </div>
+
+                <div>
+                    <h1>PLAN. LAUNCH. GROW.</h1>
+                    <p>We are team of talented designers making Websites with Bootstrap</p>
+                </div>
+            </section>
+            <!-- second play div end -->
+
+
+            <section class="third_main_container">
+
+                <div class="link">
+                    <a href="#">GET STARTED</a>
+                </div>
+
+                <div class="icon">
+                    <p><i class="fa-sharp fa-solid fa-circle-play"></i>Watch Video</p>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
